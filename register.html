@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" href="src/css/register.css" />
+	</head>
+	<body>
+		<div class="container-box">
+			<div class="title">
+				<p>注册小米账号</p>
+			</div>
+			<div class="first-container">
+				<span>国家和地区</span>
+				<input type="text" placeholder="中国" id="area">
+				<span>成功注册账号后，国家/地区将不能被修改</span>
+				<div class="second-container">
+					<span>手机号码</span>
+					<input type="number" id="number" />
+					<b class="hide">请输入手机号码</b>
+						<div>
+					 <button type="submit" id="submit" class="btn" >立即注册</button>
+					</div>
+					<div class="bo">
+					<input type="checkbox" checked="checked">注册账号即表示您同意并愿意遵守小米<strong>用户协议</strong>和<strong>隐私政策</strong>
+				 </div>
+				 </div>
+			
+			</div>
+			
+		</div>
+		
+		<script src="src/js/register.js"></script>
+		<!-- <script> 
+		
+		var number=document.getElementById("number");
+		
+		number.addEventListener("blur",confirmNumber);
+		
+	function confirmNumber(){
+			var tel_reg=/\b18\s\d{9}|15\d{9}|13\d{9}/gm;
+			var number_str=number.value;
+			var tip=number.parentNode.children[2];
+			if(tel_reg.test(number_str)){
+				tip.className="hide";
+			}else{
+				tip.className="error";
+			}
+		}
+		</script> -->
+	</body>
+</html>
